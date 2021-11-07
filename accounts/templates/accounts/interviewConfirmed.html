@@ -1,0 +1,13 @@
+{% extends "accounts/base.html" %}
+{% block content %}
+    <div class="container">
+        <h1 class="border-bottom pt-3 ppb-3">Your Details</h1>
+        <strong>Your Name: </strong>{{your_name}}</br>
+        <strong>Phone: </strong>{{your_phone}}</br>
+        <strong>Email: </strong>{{your_email}}</br>
+        <strong>Your Branch: </strong>{{your_branch}}</br>
+        <strong>Scheduled Date: </strong>{{your_schedule_date}}</br>
+        <strong>Scheduled Time: </strong>{{your_schedule_time}}</br>
+        <button type="button" class="btn btn-outline-info"><a href="{%url 'account-logout' %}">Logout</a></button>
+    </div>
+{% endblock content %}
